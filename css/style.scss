@@ -78,6 +78,7 @@ nav {
   height: 100vh;
   width: 100vw;
   position: fixed;
+  z-index: 4;
   top: 0;
   background-color: rgba(0, 0, 0, 0.8);
   clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
@@ -160,6 +161,13 @@ header {
       }
     }
   }
+}
+
+nav.sticky {
+  position: sticky;
+  top: 0%;
+  left: 0%;
+  opacity: 0.9;
 }
 
 #why-choose {
