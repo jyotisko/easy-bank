@@ -7,8 +7,6 @@ const hamburgerMenu = () => {
     showHamburger = !showHamburger;
     e.preventDefault();
     mobileNavMenu.classList.toggle('open');
-    if (showHamburger) hamburgerBtn.src = './images/close.svg';
-    if (!showHamburger) hamburgerBtn.src = './images/icon-hamburger.svg';
   });
 };
 
@@ -32,7 +30,7 @@ const stickyNavBar = () => {
 
 const init = () => {
   hamburgerMenu();
-  stickyNavBar();
+  // stickyNavBar();
 }
 
 init();

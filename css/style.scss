@@ -28,6 +28,10 @@ html {
 nav {
   height: 10vh;
   width: 100%;
+  position: sticky;
+  z-index: 10;
+  top: 0%;
+  left: 0%;
   .nav__container {
     height: 100%;
     width: 100%;
@@ -67,6 +71,9 @@ nav {
     .mobile__nav {
       z-index: 5;
       display: none;
+      position: relative;
+      top: -10%;
+      right: 5%;
       .hamburger-icon {
         cursor: pointer;
       }
@@ -102,6 +109,12 @@ nav {
 .mobile-nav-links.open {
   clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
   pointer-events: all;
+}
+nav.sticky {
+  position: sticky;
+  top: 0%;
+  left: 0%;
+  opacity: 0.9;
 }
 
 header {
@@ -163,12 +176,6 @@ header {
   }
 }
 
-nav.sticky {
-  position: sticky;
-  top: 0%;
-  left: 0%;
-  opacity: 0.9;
-}
 
 #why-choose {
   height: 50vh;
@@ -575,6 +582,7 @@ footer {
 }
 
 @media screen and (max-width: 648px) {
+
   nav {
     .nav__container {
       .part__1 {
@@ -682,8 +690,8 @@ footer {
             align-items: center;
             justify-content: center;
             h4 {
-              width: 20%;
-              height: 30%;
+              width: auto;
+              height: auto;
               background-color: rgba(0, 0, 0, 0.4);
               font-size: 1.5rem;
               color: $white;
@@ -734,5 +742,69 @@ footer {
         text-align: center;
       }
     }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  html {
+    font-size: 40%;
+  }
+
+  nav {
+    .nav__container {
+      img.logo {
+        width: 80%;
+        height: 100%;
+      }
+    }
+  }
+
+  header {
+    .header__container {
+    
+      .part__2 {
+        height: 100%;
+        width: 100%;
+        top: -20%;
+        right: 0%;
+        img {
+          width: 130%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 344px) {
+  nav {
+    .nav__container {
+      img.logo {
+        width: 95%;
+        height: 100%;
+      }
+    }
+  }
+
+  header {
+    .header__container {
+      .part__1 {
+        a {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 700px) {
+  header {
+    height: 110vh;
+  }
+  #why-choose {
+    height: 130vh;
+  }
+
+  #article {
+    height: 200vh;
   }
 }

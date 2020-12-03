@@ -14,6 +14,11 @@ html {
 nav {
   height: 10vh;
   width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 10;
+  top: 0%;
+  left: 0%;
 }
 
 nav .nav__container {
@@ -96,6 +101,9 @@ nav .nav__container .part__3 a {
 nav .nav__container .mobile__nav {
   z-index: 5;
   display: none;
+  position: relative;
+  top: -10%;
+  right: 5%;
 }
 
 nav .nav__container .mobile__nav .hamburger-icon {
@@ -153,6 +161,14 @@ nav .nav__container .mobile__nav .hamburger-icon {
   -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
           clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
   pointer-events: all;
+}
+
+nav.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  left: 0%;
+  opacity: 0.9;
 }
 
 header {
@@ -237,14 +253,6 @@ header .header__container .part__2 {
 
 header .header__container .part__2 img {
   width: 105%;
-}
-
-nav.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0%;
-  left: 0%;
-  opacity: 0.9;
 }
 
 #why-choose {
@@ -871,8 +879,8 @@ footer .footer__container .part__3 .content h3 {
             justify-content: center;
   }
   #article .article__container .part__2 figure .content h4 {
-    width: 20%;
-    height: 30%;
+    width: auto;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.4);
     font-size: 1.5rem;
     color: white;
@@ -942,6 +950,47 @@ footer .footer__container .part__3 .content h3 {
     height: 100%;
     width: 100%;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  html {
+    font-size: 40%;
+  }
+  nav .nav__container img.logo {
+    width: 80%;
+    height: 100%;
+  }
+  header .header__container .part__2 {
+    height: 100%;
+    width: 100%;
+    top: -20%;
+    right: 0%;
+  }
+  header .header__container .part__2 img {
+    width: 130%;
+  }
+}
+
+@media screen and (max-width: 344px) {
+  nav .nav__container img.logo {
+    width: 95%;
+    height: 100%;
+  }
+  header .header__container .part__1 a {
+    width: 50%;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  header {
+    height: 110vh;
+  }
+  #why-choose {
+    height: 130vh;
+  }
+  #article {
+    height: 200vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
