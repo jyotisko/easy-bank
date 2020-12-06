@@ -137,6 +137,7 @@ header {
       margin-left: 10%;
       p {
         margin: 1rem;
+        width: 90%;
       }
       p:nth-child(1) {
         font-weight: 500;
@@ -322,7 +323,8 @@ footer {
       justify-content: center;
       flex-direction: column;
       img.logo {
-        height: 20%;
+        width: 20rem;
+        height: 3rem;
       }
       .icons {
         width: 30%;

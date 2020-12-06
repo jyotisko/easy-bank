@@ -206,6 +206,7 @@ header .header__container .part__1 {
 
 header .header__container .part__1 p {
   margin: 1rem;
+  width: 90%;
 }
 
 header .header__container .part__1 p:nth-child(1) {
@@ -490,7 +491,8 @@ footer .footer__container .part__1 {
 }
 
 footer .footer__container .part__1 img.logo {
-  height: 20%;
+  width: 20rem;
+  height: 3rem;
 }
 
 footer .footer__container .part__1 .icons {

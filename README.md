@@ -1,4 +1,6 @@
-# Site is Live At: https://easy-bank-jyotisko.netlify.app/
+# Frontend Mentor - Easybank landing page
+
+![Design preview for the Easybank landing page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
